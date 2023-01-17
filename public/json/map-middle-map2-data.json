@@ -1,0 +1,68 @@
+{
+    "data": [
+        {
+            "province": "内蒙古",
+            "value": [
+                101.65,
+                40.82
+            ],
+            "name": "张三",
+            "location": "内蒙古自治区呼伦贝尔市新巴尔虎左旗G301",
+            "todo": 11113,
+            "topic": 11113,
+            "report": 1111,
+            "status": "normal",
+            "checkbox": false,
+            "avatar": "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3363295869,2467511306&fm=26&gp=0.jpg",
+            "symbol": "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3363295869,2467511306&fm=26&gp=0.jpg"
+        },
+        {
+            "province": "西藏",
+            "value": [
+                89.11,
+                27.97
+            ],
+            "name": "李四",
+            "location": "西藏拉萨市城关区北京中路35号",
+            "todo": 10013,
+            "topic": 11013,
+            "report": 1011,
+            "avatar": "https://wx.qlogo.cn/mmopen/vi_32/eANbKH1RvLW088qRtM96QLWWkgysk4T2TErm4F0lHcnhu2txL6Kk0PJokrxT4TLUmEtAZ2xqtxwTRIPWoZZ9RQ/132",
+            "symbol": "https://wx.qlogo.cn/mmopen/vi_32/eANbKH1RvLW088qRtM96QLWWkgysk4T2TErm4F0lHcnhu2txL6Kk0PJokrxT4TLUmEtAZ2xqtxwTRIPWoZZ9RQ/132",
+            "status": "access",
+            "checkbox": false
+        },
+        {
+            "province": "新疆",
+            "value": [
+                80.68,
+                42.77
+            ],
+            "name": "王五",
+            "location": "新疆维吾尔族自治区...",
+            "todo": 12223,
+            "topic": 11223,
+            "report": 1121,
+            "avatar": "https://wx.qlogo.cn/mmopen/vi_32/eANbKH1RvLW088qRtM96QLWWkgysk4T2TErm4F0lHcnhu2txL6Kk0PJokrxT4TLUmEtAZ2xqtxwTRIPWoZZ9RQ/132",
+            "symbol": "https://wx.qlogo.cn/mmopen/vi_32/eANbKH1RvLW088qRtM96QLWWkgysk4T2TErm4F0lHcnhu2txL6Kk0PJokrxT4TLUmEtAZ2xqtxwTRIPWoZZ9RQ/132",
+            "status": "missed",
+            "checkbox": false
+        },
+        {
+            "province": "山东",
+            "value": [
+                119,
+                36.65
+            ],
+            "name": "赵六",
+            "location": "山东省市天桥区济泺路87号",
+            "todo": 14413,
+            "topic": 14413,
+            "report": 1441,
+            "status": "off",
+            "checkbox": false,
+            "avatar": "https://wx.qlogo.cn/mmopen/vi_32/eANbKH1RvLW088qRtM96QLWWkgysk4T2TErm4F0lHcnhu2txL6Kk0PJokrxT4TLUmEtAZ2xqtxwTRIPWoZZ9RQ/132",
+            "symbol": "https://wx.qlogo.cn/mmopen/vi_32/eANbKH1RvLW088qRtM96QLWWkgysk4T2TErm4F0lHcnhu2txL6Kk0PJokrxT4TLUmEtAZ2xqtxwTRIPWoZZ9RQ/132"
+        }
+    ]
+}

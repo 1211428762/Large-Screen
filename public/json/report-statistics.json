@@ -1,0 +1,99 @@
+{
+	"tooltip": {
+		"show": false,
+		"trigger": "item",
+		"position": ["50%", "50%"],
+		"backgroundColor": "black"
+	},
+	"legend": {
+		"data": [
+			"视频报道",
+			"音频报道",
+			"图片报道",
+			"文字报道"
+		],
+		"left": 0,
+		"bottom": 0,
+		"width": 162.14,
+		"height": 42,
+		"orient": "horizontal",
+		"align": "left",
+		"itemGap": 11,
+		"itemWidth": 26.14,
+		"itemHeight": 26.14,
+		"textStyle": {
+			"color": "#748AA1",
+			"fontWeight": 400,
+			"fontSize": 30.57,
+			"lineHeight": 42
+		},
+		"icon": "circle"
+	},
+	"series": [
+		{
+			"name": "报道形式",
+			"type": "pie",
+			"startAngle": 160,
+			"radius": [
+				"35%",
+				"50%"
+			],
+			"hoverOffset": 30,
+			"label": {
+				"formatter": "formatter",
+				"rich": {
+					"name": {
+						"color": "#00709B",
+						"fontSize": 40.1,
+						"lineHeight": 57,
+						"fontWeight": 500,					
+						"font-family": "PingFangSC-Regular, PingFang SC"
+					},
+					"value": {
+						"color": "#FFFFFF",
+						"fontSize": 40.1,
+						"lineHeight": 57,
+						"fontWeight": 500,
+						"font-family": "PingFangSC-Regular, PingFang SC"
+					}
+				},
+				"padding": [-30, -120, 20, -120]
+			},
+			"labelLine": {
+				"length": 30,
+				"length2": 100
+			},
+			"data": [
+				{
+					"value": 14,
+					"name": "视频报道",
+					"selected": false
+				},
+				{
+					"value": 9,
+					"name": "音频报道",
+					"selected": false
+				},
+				{
+					"value": 7,
+					"name": "图片报道",
+					"selected": false
+				},
+				{
+					"value": 70,
+					"name": "文字报道",
+					"selected": true
+				}
+			],
+			"animation": true,
+			"selectedMode": "single",
+			"selectedOffset": 20
+		}
+	],
+	"color": [
+		"#6236FF",
+		"#FF9645",
+		"#767676",
+		"#2BA5D4"
+	]
+}

@@ -1,0 +1,65 @@
+{
+	"msg": "success",
+	"code": 0,
+	"data": {
+		"title": "探营第二届进博会新闻中心",
+		"description": "第二届中国国际进口博览会即将从5日起在上海举行，新闻中心已准备就绪，跟随新华社记者的镜头一起去探营！",
+		"titleImg": "http://img-xhpfm.zhongguowangshi.com/News/201911/015e318e687b4a46b617e4a6735097a0.jpg",
+		"videoUrl": "http://vod-xhpfm.zhongguowangshi.com/live/201911/0a88d7bf0cb045f998732e1f8a0f3c9f.mp4",
+		"list": [{
+			"content": "一年级的“小叶子”章叶浩薇心情十分激动，她已经在期待下一届进博会了。",
+			"imgList": ["http://img-xhpfm.zhongguowangshi.com/live/201911/20191104152554664_9738.jpg"],
+			"releaseDate": "15:51",
+			"reportType": 6002,
+			"titleImg": "",
+			"username": "陈倩",
+			"videoImgUrl": "http://img-xhpfm.zhongguowangshi.com/live/201911/20191104152554664_9738.jpg",
+			"videoUrl": "http://vod-xhpfm.zhongguowangshi.com/live/201911/0a88d7bf0cb045f998732e1f8a0f3c9f.mp4"
+		}, {
+			"content": "邢志伟连续两年成为进博会志愿者，是一名二年级的“小叶子”，志愿服务进博会，他有何感受？",
+			"imgList": ["http://img-xhpfm.zhongguowangshi.com/live/201911/20191104152417640_7922.jpg","http://img-xhpfm.zhongguowangshi.com/live/201911/20191104152554664_9738.jpg"],
+			"releaseDate": "15:28",
+			"reportType": 6002,
+			"username": "陈倩",
+			"titleImg": "",
+			"videoImgUrl": "http://img-xhpfm.zhongguowangshi.com/live/201911/20191104152417640_7922.jpg",
+			"videoUrl": "http://vod-xhpfm.zhongguowangshi.com/live/201911/2b7f3832cd99455ca86c677cfc725bb1.mp4"
+		}, {
+			"content": "第二届进博会即将开幕，150多个国家和地区的3000多家企业、约50万专业采购商将齐聚上海。",
+			"imgList": ["http://img-xhpfm.zhongguowangshi.com/live/201911/20191104152417640_7922.jpg","http://img-xhpfm.zhongguowangshi.com/live/201911/20191104152554664_9738.jpg","http://img-xhpfm.zhongguowangshi.com/live/201911/20191104133347961_8474.jpg"],
+			"releaseDate": "15:21",
+			"reportType": 6002,
+			"titleImg": "",
+			"username": "陶一萍",
+			"videoImgUrl": "http://img-xhpfm.zhongguowangshi.com/live/201911/20191104133347961_8474.jpg",
+			"videoUrl": "http://vod-xhpfm.zhongguowangshi.com/live/201911/8236cfc5d5b44c6c9ad849e2e6eaf9aa.mp4"
+		}, {
+			"content": "进博会新闻中心体验感如何？听听澎湃新闻记者韩晓蓉怎么说！",
+			"imgList": ["http://img-xhpfm.zhongguowangshi.com/live/201911/20191104152417640_7922.jpg","http://img-xhpfm.zhongguowangshi.com/live/201911/20191104152554664_9738.jpg","http://img-xhpfm.zhongguowangshi.com/live/201911/20191104133347961_8474.jpg","http://img-xhpfm.zhongguowangshi.com/live/201911/20191104143924708_4522.jpg"],
+			"releaseDate": "14:59",
+			"reportType": 6002,
+			"titleImg": "",
+			"username": "陈倩",
+			"videoImgUrl": "http://img-xhpfm.zhongguowangshi.com/live/201911/20191104143924708_4522.jpg",
+			"videoUrl": "http://vod-xhpfm.zhongguowangshi.com/live/201911/b7988318fc4247688a0a82b86e8ecb20.mp4"
+		}, {
+			"content": "新华社关于进博会的报道，可以在新闻报道中心的互动展示大屏上查看。",
+			"imgList": ["http://img-xhpfm.zhongguowangshi.com/live/201911/20191104152417640_7922.jpg","http://img-xhpfm.zhongguowangshi.com/live/201911/20191104152554664_9738.jpg","http://img-xhpfm.zhongguowangshi.com/live/201911/20191104133347961_8474.jpg","http://img-xhpfm.zhongguowangshi.com/live/201911/20191104143924708_4522.jpg","http://img-xhpfm.zhongguowangshi.com/live/201911/20191104141202154_3154.jpg"],
+			"releaseDate": "14:58",
+			"reportType": 6002,
+			"titleImg": "",
+			"username": "陶一萍",
+			"videoImgUrl": "http://img-xhpfm.zhongguowangshi.com/live/201911/20191104141202154_3154.jpg",
+			"videoUrl": "http://vod-xhpfm.zhongguowangshi.com/live/201911/80f48156f73c414da3e2e4e8cbcf8883.mp4"
+		}, {
+			"content": "新华社记者使用装有5G卡的5G手机进行现场报道。",
+			"imgList": ["http://img-xhpfm.zhongguowangshi.com/live/201911/20191104152417640_7922.jpg","http://img-xhpfm.zhongguowangshi.com/live/201911/20191104152554664_9738.jpg","http://img-xhpfm.zhongguowangshi.com/live/201911/20191104133347961_8474.jpg","http://img-xhpfm.zhongguowangshi.com/live/201911/20191104143924708_4522.jpg","http://img-xhpfm.zhongguowangshi.com/live/201911/20191104141202154_3154.jpg","http://img-xhpfm.zhongguowangshi.com/News/201911/6f150662a48e4ef9926d4d1a8b31568a.jpg", "http://img-xhpfm.zhongguowangshi.com/News/201911/5e31e48f31b140819f202fb4d143350d.jpg"],
+			"releaseDate": "14:54",
+			"reportType": 6002,
+			"titleImg": "",
+			"username": "陈倩",
+			"videoImgUrl": "http://img-xhpfm.zhongguowangshi.com/News/201911/6f150662a48e4ef9926d4d1a8b31568a.jpg",
+			"videoUrl": ""
+		}]
+	}
+}

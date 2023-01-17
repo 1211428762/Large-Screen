@@ -1,0 +1,15 @@
+* {
+    font-family: "SimHei", sans-serif;
+}
+
+.border-m {
+    border: 1px solid black;
+}
+
+.border-b {
+    border: 1px solid blue;
+}
+
+.border-r {
+    border: 1px solid red;
+}

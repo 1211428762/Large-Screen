@@ -1,0 +1,15 @@
+{
+    "series": [{
+        "type": "pie",
+        "data": "data",
+        "labelLine": {
+            "show": false
+        },
+        "radius": [
+            "85%",
+            "99%"
+        ],
+        "hoverAnimation": false
+    }],
+    "color": ["#6CD6FF", "#00709B"]
+}

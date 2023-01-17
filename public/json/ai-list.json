@@ -1,0 +1,24 @@
+{
+    "msg": "success",
+    "code": 0,
+    "list": [
+
+        {
+            "url": "./video/media/AI/1.mp4",
+            "img": "./video/media/AI/1.png"
+        },
+        {
+            "url": "./video/media/AI/2.mp4",
+            "img": "./video/media/AI/2.png"
+        },
+        {
+            "url": "./video/media/AI/3.mp4",
+            "img": "./video/media/AI/3.png"
+        },
+        {
+            "url": "./video/media/AI/4.mp4",
+            "img": "./video/media/AI/4.png"
+        }
+    ]
+
+}
