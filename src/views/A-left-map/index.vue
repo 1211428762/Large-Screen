@@ -93,17 +93,78 @@ export default {
   },
   methods: {
     init() {
-      this.$api.jinan_module.hotpotList().then(({ data }) => {
-        const mapDate = data.dataList
-        mapDate.forEach((cur, index) => {
-          this.mapDate.push({
-            value: cur.coordinates,
-            highlight: index === 0 ? true : false,
-            name: cur.place,
-          })
+      // this.$api.jinan_module.hotpotList().then(({ data }) => {
+      const mapDate = [
+        {
+          title: '黑龙江省绥化市望奎县在主动筛查中发现1名复阳人员',
+          coordinates: [127.63333, 47.75],
+          place: '黑龙江',
+          views: 555,
+        },
+        {
+          title: '中美“乒乓外交”50周年纪念活动在京举行',
+          coordinates: [116.41667, 39.91667],
+          place: '北京',
+          views: 666,
+        },
+        {
+          title: '南海舰队一次性入列的三型主战舰艇都是何等利器？',
+          coordinates: [113.23333, 23.16667],
+          place: '广东',
+          views: 5550,
+        },
+        {
+          title: '爸爸回应光腿光脚抱女儿看急诊：这是一个父亲应该做的[心]',
+          coordinates: [113.65, 34.76667],
+          place: '河南',
+          views: 45,
+        },
+        {
+          title: '新疆卡拉麦里生态图卷',
+          coordinates: [87.68333, 43.76667],
+          place: '新疆',
+          views: 332,
+        },
+        {
+          title: '南京高校无人机光影秀迎接“中国航天日”',
+          coordinates: [119.78333, 32.05],
+          place: '南京',
+          views: 156,
+        },
+        {
+          title: '福建，深藏Blue！',
+          coordinates: [118.3, 26.08333],
+          place: '福建',
+          views: 37,
+        },
+        {
+          title: '广西三江：侗画文创促增收',
+          coordinates: [108.320004, 22.82402],
+          place: '广西',
+          views: 1,
+        },
+        {
+          title: '河北大名|红色教育基地火爆，隆真精神代代传',
+          coordinates: [115.48333, 38.03333],
+          place: '河北',
+          views: 888,
+        },
+        {
+          title: '贵州台江：五彩粽、五彩饭飘香“姊妹节”',
+          coordinates: [106.71667, 26.56667],
+          place: '贵州',
+          views: 222,
+        },
+      ]
+      mapDate.forEach((cur, index) => {
+        this.mapDate.push({
+          value: cur.coordinates,
+          highlight: index === 0 ? true : false,
+          name: cur.place,
         })
-        this.renderMap1()
       })
+      this.renderMap1()
+      // })
 
       // this.renderMap2();
       // this._echarts2 = echarts.init(this.$refs["layer2"]);

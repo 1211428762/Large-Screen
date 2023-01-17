@@ -6,10 +6,7 @@
       <!-- <figure ref="globe" class="ball flex">
         <div class="ball1"></div>
       </figure> -->
-      <div
-        ref="globe"
-        style="width: 1544px; height: 1555px; margin-top: 180px"
-      ></div>
+      <div ref="globe" style="width: 1544px; height: 1555px; margin-top: 180px"></div>
       <img src="img/chassis.png" alt="" />
     </section>
 
@@ -27,37 +24,19 @@
       <span>本周总生产</span>
     </div>
     <div class="aidate2">
-      <number
-        :delay="400"
-        class="number"
-        v-if="dataList[0]"
-        :endVal="dataList[0]"
-        :key="numKey + dataList[0]"
-      ></number>
+      <number :delay="400" class="number" v-if="dataList[0]" :endVal="dataList[0]" :key="numKey + dataList[0]"></number>
 
       <img class="flash-2" src="img/fluorescent.gif" alt="" />
       <span>视频生产</span>
     </div>
     <div class="aidate2">
-      <number
-        :delay="400"
-        class="number"
-        v-if="dataList[1]"
-        :endVal="dataList[1]"
-        :key="numKey + dataList[1]"
-      ></number>
+      <number :delay="400" class="number" v-if="dataList[1]" :endVal="dataList[1]" :key="numKey + dataList[1]"></number>
 
       <img class="flash-3" src="img/fluorescent.gif" alt="" />
       <span> 图文生产</span>
     </div>
     <div class="aidate2">
-      <number
-        :delay="400"
-        class="number"
-        v-if="dataList[2]"
-        :endVal="dataList[2]"
-        :key="numKey + dataList[2]"
-      ></number>
+      <number :delay="400" class="number" v-if="dataList[2]" :endVal="dataList[2]" :key="numKey + dataList[2]"></number>
 
       <img class="flash-4" src="img/fluorescent.gif" alt="" />
       <span>音频生产</span>
@@ -68,33 +47,20 @@
         <div class="col2 flex">
           <figure class="aiImg-wrap">
             <img class="aiImg-map" src="img/aiotmap.png" alt="" />
-            <img
-              :style="location"
-              class="aiImg-location "
-              src="img/aiotmap-location.gif"
-              alt=""
-            />
+            <img :style="location" class="aiImg-location " src="img/aiotmap-location.gif" alt="" />
           </figure>
 
           <ul class="flex flexcolumn">
             <li class="flexbetween">
-              <span class="iotSpan">
-                <img src="img/location.png" alt="" /> 当前位置
-              </span>
+              <span class="iotSpan"> <img src="img/location.png" alt="" /> 当前位置 </span>
               <div>融媒体中心</div>
             </li>
             <li class="flexbetween">
-              <span class="iotSpan">
-                <img src="img/thermometer.png" alt="" /> 26℃
-              </span>
-              <div class="water-span">
-                <img src="img/water.png" alt="" /> 60%RH
-              </div>
+              <span class="iotSpan"> <img src="img/thermometer.png" alt="" /> 26℃ </span>
+              <div class="water-span"><img src="img/water.png" alt="" /> 60%RH</div>
             </li>
             <li class="flexbetween">
-              <span class="iotSpan"
-                ><img src="img/heart.png" alt="" /> 健康状况
-              </span>
+              <span class="iotSpan"><img src="img/heart.png" alt="" /> 健康状况 </span>
               <div>潘阳 久坐</div>
             </li>
           </ul>
@@ -102,10 +68,7 @@
         <div class="col2 flex">
           <figure class="hunman-status">
             <el-carousel height="380px" arrow="never" indicator-position="none">
-              <el-carousel-item
-                v-for="(item, index) in hunmanImg"
-                :key="item + index"
-              >
+              <el-carousel-item v-for="(item, index) in hunmanImg" :key="item + index">
                 <img :src="item" alt="" />
               </el-carousel-item>
             </el-carousel>
@@ -113,26 +76,18 @@
           </figure>
           <ul>
             <li class="flexbetween">
-              <span class="iotSpan">
-                <img src="img/abnormal.png" alt="" /> 人流量
-              </span>
+              <span class="iotSpan"> <img src="img/abnormal.png" alt="" /> 人流量 </span>
               <span>30</span>
             </li>
             <li class="flexbetween">
               <span class="iotSpan">
-                <img
-                  style="top: 0; width: 90px; height: 70px"
-                  src="img/temperature.png"
-                  alt=""
-                />
+                <img style="top: 0; width: 90px; height: 70px" src="img/temperature.png" alt="" />
                 体温检测</span
               >
               <span>36.5℃</span>
             </li>
             <li class="flexbetween">
-              <span class="iotSpan">
-                <img src="img/abnormal.png" alt="" />异常情况</span
-              >
+              <span class="iotSpan"> <img src="img/abnormal.png" alt="" />异常情况</span>
               <span>1</span>
             </li>
           </ul>
@@ -143,39 +98,34 @@
 </template>
 
 <script>
-import * as echarts from "echarts";
-import "echarts-gl";
+import * as echarts from 'echarts'
+import 'echarts-gl'
 export default {
   data() {
     return {
       dataList: [],
       numKey: 0,
-      locationLeft: _.random(30, 40) + "%",
-      locationTop: _.random(30, 40) + "%",
-      hunmanImg: [
-        "img/healthimg1.jpg",
-        "img/healthimg2.jpg",
-        "img/healthimg3.jpg",
-        "img/healthimg4.jpg",
-      ],
-    };
+      locationLeft: _.random(30, 40) + '%',
+      locationTop: _.random(30, 40) + '%',
+      hunmanImg: ['img/healthimg1.jpg', 'img/healthimg2.jpg', 'img/healthimg3.jpg', 'img/healthimg4.jpg'],
+    }
   },
   computed: {
     location() {
       return {
         // left: this.locationLeft,
         // top: this.locationTop,
-        left: "60%",
-        top: "30%",
-      };
+        left: '60%',
+        top: '30%',
+      }
     },
   },
   created() {
-    this.$api.jinan_module.productionStatistic().then(({ data }) => {
-      if (data) {
-        this.dataList = data.data.dataList;
-      }
-    });
+    // this.$api.jinan_module.productionStatistic().then(({ data }) => {
+    // if (data) {
+    this.dataList = [683, 863, 798, 573]
+    // }
+    // });
   },
   mounted() {
     // setInterval(() => {
@@ -189,12 +139,12 @@ export default {
   },
   methods: {
     renderGlobe() {
-      let myChart = echarts.init(this.$refs["globe"]);
+      let myChart = echarts.init(this.$refs['globe'])
 
       let option = {
         globe: {
-          baseTexture: "/img/world.jpg",
-          heightTexture: "/img/world.jpg",
+          baseTexture: '/img/world.jpg',
+          heightTexture: '/img/world.jpg',
           realisticMaterial: {
             roughness: 0.9,
           },
@@ -210,67 +160,67 @@ export default {
         visualMap: [
           {
             show: false,
-            type: "continuous",
+            type: 'continuous',
             seriesIndex: 0,
-            text: ["scatter3D"],
+            text: ['scatter3D'],
             textStyle: {
-              color: "#fff",
+              color: '#fff',
             },
             calculable: true,
             max: 3000,
             inRange: {
-              color: ["#87aa66", "#eba438", "#d94d4c"],
+              color: ['#87aa66', '#eba438', '#d94d4c'],
             },
           },
         ],
         series: [
           {
-            name: "lines3D",
-            type: "lines3D",
-            coordinateSystem: "globe",
+            name: 'lines3D',
+            type: 'lines3D',
+            coordinateSystem: 'globe',
             effect: {
               show: true,
               period: 2,
               trailWidth: 3,
               trailLength: 0.5,
               trailOpacity: 1,
-              trailColor: "#0087f4",
+              trailColor: '#0087f4',
             },
-            blendMode: "lighter",
+            blendMode: 'lighter',
             lineStyle: {
               // width: 2
               width: 1,
-              color: "#0087f4",
+              color: '#0087f4',
               opacity: 0,
             },
             data: [],
             silent: false,
           },
         ],
-      };
-      for (let i = 0; i < 50; i++) {
-        option.series[0].data = option.series[0].data.concat(this.rodamData());
       }
-      myChart.setOption(option);
+      for (let i = 0; i < 50; i++) {
+        option.series[0].data = option.series[0].data.concat(this.rodamData())
+      }
+      myChart.setOption(option)
     },
     rodamData() {
-      let name = "随机点" + Math.random().toFixed(5) * 100000;
+      let name = '随机点' + Math.random().toFixed(5) * 100000
       // let longitude = Math.random() * 62 + 73
-      let longitude = 105.18;
-      let longitude2 = Math.random() * 360 - 180;
+      let longitude = 105.18
+      let longitude2 = Math.random() * 360 - 180
       // let latitude = Math.random() * 50 + 3.52
-      let latitude = 37.51;
-      let latitude2 = Math.random() * 180 - 90;
+      let latitude = 37.51
+      let latitude2 = Math.random() * 180 - 90
       return {
         coords: [
           [longitude2, latitude2],
           [longitude, latitude],
         ],
         value: (Math.random() * 3000).toFixed(2),
-      };
+      }
     },
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>
@@ -285,7 +235,7 @@ export default {
   position: absolute;
   width: 497px;
   height: 767px;
-  background-image: url("../../../public/svg/aidatebg.svg");
+  background-image: url('../../../public/svg/aidatebg.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -311,7 +261,7 @@ export default {
   padding: 5px 10px;
   width: 3657px;
   height: 545px;
-  background-image: url("../../../public/svg/aioffice_center_bottomBg.svg");
+  background-image: url('../../../public/svg/aioffice_center_bottomBg.svg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -355,7 +305,7 @@ export default {
   border-radius: 50%;
   position: relative;
   transform-style: preserve-3d;
-  background: url("../../../public/img/earth1.png") repeat-x;
+  background: url('../../../public/img/earth1.png') repeat-x;
   background-size: cover;
   animation: move-map 30s infinite linear;
   z-index: 3;
@@ -370,14 +320,14 @@ export default {
   border-radius: 50%;
   position: relative;
   transform-style: preserve-3d;
-  background: url("../../../public/img/earth.png") repeat-x;
+  background: url('../../../public/img/earth.png') repeat-x;
   background-size: cover;
   animation: move-map 30s infinite linear;
   z-index: -1;
 }
 
 .ball1:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0%;
   left: 0%;
@@ -389,7 +339,7 @@ export default {
 }
 
 .ball1:after {
-  content: "";
+  content: '';
   position: absolute;
   border-radius: 50%;
   width: 100%;
@@ -398,13 +348,7 @@ export default {
   left: 0;
   filter: blur(0);
   opacity: 0.2;
-  background: radial-gradient(
-    circle at 50% 80%,
-    #81e8f6,
-    #76deef 10%,
-    #055194 66%,
-    #062745 100%
-  );
+  background: radial-gradient(circle at 50% 80%, #81e8f6, #76deef 10%, #055194 66%, #062745 100%);
 }
 
 .stage {
@@ -507,7 +451,7 @@ export default {
   text-align: center;
   img {
     position: absolute;
- top: 180px;
+    top: 180px;
     left: 75px;
     border-radius: 40%;
   }
@@ -519,7 +463,7 @@ export default {
   top: -160px;
   height: 1900px;
   width: 1900px;
-  background: url("../../../public/img/earth-ring.png") no-repeat center;
+  background: url('../../../public/img/earth-ring.png') no-repeat center;
   background-size: 100% 100%;
   animation: roll 5s infinite linear;
 }
@@ -535,7 +479,7 @@ export default {
   position: relative;
   .aiImg-location {
     position: absolute;
-  width: 50px;
+    width: 50px;
     height: 100px;
   }
 }

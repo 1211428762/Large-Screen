@@ -51,22 +51,22 @@ export default {
   },
   props: ['vContent'],
   mounted() {
-    this.$api.jinan_module.checkContentAudit().then(({ data }) => {
-      if (data) {
-        console.log(data)
-        this.pageData = data
-        let player = new Player({
-          id: 'audit-video',
-          url: '2.mp4',
-          playsinline: true,
-          height: '550',
-          width: '890',
-          autoplay: true,
-          loop: true,
-        })
-        player.muted = true
-      }
+    // this.$api.jinan_module.checkContentAudit().then(({ data }) => {
+    // if (data) {
+    //   console.log(data)
+    //   this.pageData = data
+    let player = new Player({
+      id: 'audit-video',
+      url: '2.mp4',
+      playsinline: true,
+      height: '550',
+      width: '890',
+      autoplay: true,
+      loop: true,
     })
+    player.muted = true
+    // }
+    // })
     this.$emit('update:vContent', this.$refs.vContent)
   },
 }

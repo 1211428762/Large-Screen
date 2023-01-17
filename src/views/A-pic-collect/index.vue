@@ -78,25 +78,34 @@ export default {
   },
   props: ['vPic'],
   mounted() {
-    this.$api.jinan_module.imgCollection().then(({ data }) => {
-      if (data) {
-        // this.picData = data;
-        _.forOwn(data, (val, key) => {
-          this.$set(this.picData, key, val)
-        })
-      }
-
-      let player = new Player({
-        id: 'pic-video',
-        url: '1.mp4',
-        playsinline: true,
-        height: '550',
-        width: '972',
-        autoplay: true,
-        loop: true,
+    // this.$api.jinan_module.imgCollection().then(({ data }) => {
+    let data = {
+      title: '"品味济南古筝文化\'',
+      videoUrl: 'http://121.89.192.156/mock/video/guzheng.mp4',
+      theme: ['中国古筝日', '古筝情'],
+      content: ['弦乐\n', '国粹\n', '传统文化', '国乐\n'],
+      scenes: ['庆典\n', '弦乐\n', '弦乐\n', '节日 \n', '弦乐\n'],
+      character: ['沈勇'],
+      interview: ['现场采访'],
+    }
+    if (data) {
+      // this.picData = data;
+      _.forOwn(data, (val, key) => {
+        this.$set(this.picData, key, val)
       })
-      player.muted = true
+    }
+
+    let player = new Player({
+      id: 'pic-video',
+      url: '1.mp4',
+      playsinline: true,
+      height: '550',
+      width: '972',
+      autoplay: true,
+      loop: true,
     })
+    player.muted = true
+    // })
     this.$emit('update:vPic', this.$refs.vPic)
   },
 }
